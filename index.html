@@ -3,373 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baterías Danna | Sunchales</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- FontAwesome para íconos -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <!-- Google Fonts: Montserrat para un estilo robusto y llamativo -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-    
+    <title>Baterías Danna - Energía Confiable en Sunchales</title>
     <style>
+        /* --- ESTILOS CSS (Diseño Azul y Blanco) --- */
         :root {
-            --primary-color: #f39c12; /* Naranja/Amarillo de baterías */
-            --dark-bg: #111417;
-            --light-bg: #f8f9fa;
+            --azul-primario: #004a99; /* Azul profesional y confiable */
+            --azul-oscuro: #003366;
+            --blanco: #ffffff;
+            --gris-claro: #f4f7f6;
+            --texto-oscuro: #333333;
         }
 
-        /* Estilos Generales y Tipografía */
-        body { 
-            font-family: 'Montserrat', sans-serif; 
-            color: #2d3436;
-            background-color: #ffffff;
-        }
-        
-        /* Quitar subrayados de todos los enlaces y botones */
-        a, a:hover, .btn, .nav-link {
-            text-decoration: none !important;
-        }
-
-        /* Navbar Limpio y Claro */
-        .navbar-custom {
-            background-color: #ffffff;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-            padding: 15px 0;
-        }
-        .navbar-custom .navbar-brand {
-            font-weight: 900;
-            font-size: 24px;
-            color: var(--dark-bg);
-            letter-spacing: -1px;
-        }
-        .navbar-custom .navbar-brand span {
-            color: var(--primary-color);
-        }
-        .navbar-custom .nav-link {
-            color: #555555 !important;
-            font-weight: 700;
-            font-size: 15px;
-            text-transform: uppercase;
-            margin: 0 10px;
-            transition: color 0.3s;
-        }
-        .navbar-custom .nav-link:hover {
-            color: var(--primary-color) !important;
-        }
-
-        /* Hero Section con Efecto Parallax (Despliegue con movimiento) */
-        .hero {
-            position: relative;
-            background-image: linear-gradient(rgba(17, 20, 23, 0.75), rgba(17, 20, 23, 0.75)), url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1200&q=80');
-            background-attachment: fixed; /* Genera el efecto de deslizamiento de la imagen */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 140px 0;
-            color: #ffffff;
-        }
-        .hero h1 {
-            font-weight: 900;
-            font-size: 48px;
-            letter-spacing: -1px;
-            line-height: 1.2;
-        }
-        .hero p {
-            font-size: 18px;
-            font-weight: 400;
-            opacity: 0.9;
-            max-width: 700px;
-            margin: 20px auto 35px auto;
-        }
-
-        /* Botones Grandes y Modernos */
-        .btn-custom-main {
-            background-color: var(--primary-color);
-            color: #000000 !important;
-            font-weight: 900;
-            font-size: 16px;
-            text-transform: uppercase;
-            padding: 14px 32px;
-            border-radius: 50px;
-            border: 2px solid var(--primary-color);
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
-        }
-        .btn-custom-main:hover {
-            background-color: transparent;
-            color: #ffffff !important;
-            transform: translateY(-3px);
-        }
-        .btn-custom-outline {
-            background-color: transparent;
-            color: #ffffff !important;
-            font-weight: 900;
-            font-size: 16px;
-            text-transform: uppercase;
-            padding: 14px 32px;
-            border-radius: 50px;
-            border: 2px solid #ffffff;
-            transition: all 0.3s ease;
-        }
-        .btn-custom-outline:hover {
-            background-color: #ffffff;
-            color: #000000 !important;
-            transform: translateY(-3px);
-        }
-
-        /* Secciones */
-        .section-title {
-            font-weight: 900;
-            font-size: 36px;
-            margin-bottom: 15px;
-            position: relative;
-            display: inline-block;
-        }
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 5px;
-            background-color: var(--primary-color);
-            margin: 10px auto 0 auto;
-            border-radius: 3px;
-        }
-
-        /* Tarjetas de Servicios */
-        .service-card {
-            background: #ffffff;
-            border: 1px solid #eef2f5;
-            border-radius: 16px;
-            padding: 40px 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%;
-        }
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.06);
-        }
-        .service-card .icon-box {
-            color: var(--primary-color);
-            margin-bottom: 20px;
-        }
-        .service-card h4 {
-            font-weight: 700;
-            font-size: 20px;
-            margin-bottom: 15px;
-        }
-        .service-card p {
-            font-size: 14px;
-            color: #666;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--blanco);
+            color: var(--texto-oscuro);
             line-height: 1.6;
         }
 
-        /* Categorías */
-        .cat-box {
-            background-color: var(--light-bg);
-            border-radius: 12px;
-            padding: 25px;
-            transition: all 0.3s;
-            border: 1px solid transparent;
-        }
-        .cat-box:hover {
-            background-color: #ffffff;
-            border-color: var(--primary-color);
-            transform: scale(1.05);
-        }
-        .cat-box h5 {
-            font-weight: 700;
-            font-size: 16px;
-            margin-top: 10px;
+        /* Encabezado (Header) */
+        header {
+            background-color: var(--azul-primario);
+            color: var(--blanco);
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 4px solid var(--azul-oscuro);
         }
 
-        /* Bloque de Contacto con Texto Claro Obligatorio */
-        .contacto-section {
-            background-color: var(--dark-bg);
-            color: #ffffff !important;
-            padding: 80px 0;
-        }
-        .contacto-section h3, .contacto-section h4 {
-            font-weight: 900;
-        }
-        .contacto-section p {
-            color: #e0e0e0;
-            font-size: 16px;
-        }
-        .contacto-section a {
-            color: #ffffff;
-            transition: color 0.3s;
-        }
-        .contacto-section a:hover {
-            color: var(--primary-color);
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
-        /* Botón de Llamada Flotante (Reemplazo de WhatsApp) */
-        .btn-phone-float {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            background-color: var(--primary-color);
-            color: #000000 !important;
-            border-radius: 50%;
-            width: 65px;
-            height: 65px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-            z-index: 1000;
-            transition: transform 0.3s ease;
+        header p {
+            margin: 5px 0 0;
+            font-size: 1rem;
+            opacity: 0.9;
         }
-        .btn-phone-float:hover { 
-            transform: scale(1.1) rotate(15deg); 
+
+        /* Sección Principal (Hero) */
+        .hero {
+            background-color: var(--gris-claro);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .hero h2 {
+            color: var(--azul-primario);
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn-contacto {
+            display: inline-block;
+            background-color: var(--azul-primario);
+            color: var(--blanco);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-contacto:hover {
+            background-color: var(--azul-oscuro);
+        }
+
+        /* Sección Servicios */
+        .servicios {
+            padding: 4rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .servicios h3 {
+            text-align: center;
+            color: var(--azul-primario);
+            font-size: 1.8rem;
+            margin-bottom: 3rem;
+        }
+
+        .grid-servicios {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .servicio-item {
+            background-color: var(--blanco);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-top: 4px solid var(--azul-primario);
+            text-align: center;
+        }
+
+        .servicio-item h4 {
+            color: var(--azul-primario);
+            margin-top: 0;
+        }
+
+        /* Pie de página (Footer) */
+        footer {
+            background-color: var(--azul-oscuro);
+            color: var(--blanco);
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
-    <!-- Navbar con Fondo Claro -->
-    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#"><span>BATERÍAS</span> DANNA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-center">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#catalogo">Categorías</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section con Efecto Movimiento de Fondo (Parallax) y Todo Centrado -->
-    <header id="inicio" class="hero text-center">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-9">
-                    <h1>Energía Confiable para tu Vehículo en <span style="color: var(--primary-color);">Sunchales</span></h1>
-                    <p>Venta, instalación y diagnóstico de baterías para autos, motos, camiones y maquinaria agrícola. ¡No te quedes a pie!</p>
-                    <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-                        <a href="tel:03493420100" class="btn btn-custom-main"><i class="fas fa-phone me-2"></i>Llamar al Taller</a>
-                        <a href="#contacto" class="btn btn-custom-outline">Dónde Estamos</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <header>
+        <h1>BATERÍAS DANNA</h1>
+        <p>Energía Confiable en Sunchales y Zona</p>
     </header>
 
-    <!-- Servicios Centrados con Tarjetas Modernas -->
-    <section id="servicios" class="py-5">
-        <div class="container text-center">
-            <h2 class="section-title">Nuestros Servicios</h2>
-            <p class="text-muted mb-5">Atención rápida y profesional en la ciudad</p>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="icon-box"><i class="fas fa-bolt fa-3x"></i></div>
-                        <h4>Carga y Mantenimiento</h4>
-                        <p>Realizamos cargas lentas y un mantenimiento completo de bornes y niveles de líquido para extender la vida útil de tu batería.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="icon-box"><i class="fas fa-temperature-high fa-3x"></i></div>
-                        <h4>Limpieza de Radiadores</h4>
-                        <p>Servicio especializado de limpieza, baqueteado y control de radiadores para evitar sobrecalentamientos y proteger el motor.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="icon-box"><i class="fas fa-truck-moving fa-3x"></i></div>
-                        <h4>Instalación a Domicilio</h4>
-                        <p>Si te quedaste sin batería en Sunchales, comunícate con nosotros y realizamos el cambio en tu ubicación en el acto.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="icon-box"><i class="fas fa-recycle fa-3x"></i></div>
-                        <h4>Reciclaje de Usadas</h4>
-                        <p>Tomamos tu batería vieja como parte de pago, dándote un descuento extra y asegurando su desguace ecológico.</p>
-                    </div>
-                </div>
+    <section class="hero">
+        <h2>¿Tu vehículo se quedó sin energía?</h2>
+        <p>Venta y colocación de baterías para autos, motos, camiones y maquinaria agrícola. Trabajamos con las mejores marcas del mercado para garantizarte durabilidad.</p>
+        <a href="https://wa.me/TUNUMERODEWHATSAPP" class="btn-contacto" target="_blank">Consultar por WhatsApp</a>
+    </section>
+
+    <section class="servicios">
+        <h3>Nuestros Servicios</h3>
+        
+        <div class="grid-servicios">
+            <div class="servicio-item">
+                <h4>Venta Minorista y Mayorista</h4>
+                <p>Amplio stock de baterías para todo tipo de vehículos y aplicaciones.</p>
+            </div>
+            
+            <div class="servicio-item">
+                <h4>Colocación a Domicilio</h4>
+                <p>Vamos adonde estés en Sunchales para instalar tu batería nueva sin cargo.</p>
+            </div>
+            
+            <div class="servicio-item">
+                <h4>Control de Carga</h4>
+                <p>Probamos el estado de tu batería y el alternador de tu vehículo.</p>
             </div>
         </div>
     </section>
 
-    <!-- Catálogo / Soluciones -->
-    <section id="catalogo" class="py-5 bg-light-bg">
-        <div class="container text-center">
-            <h2 class="section-title">Soluciones de Energía</h2>
-            <p class="text-muted mb-5">Modelos reforzados y marcas líderes para cada necesidad</p>
-            <div class="row g-4">
-                <div class="col-6 col-md-3">
-                    <div class="cat-box">
-                        <i class="fas fa-car fa-2x text-secondary"></i>
-                        <h5>Automóviles</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="cat-box">
-                        <i class="fas fa-motorcycle fa-2x text-secondary"></i>
-                        <h5>Motocicletas</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="cat-box">
-                        <i class="fas fa-tractor fa-2x text-secondary"></i>
-                        <h5>Línea Pesada / Agro</h5>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="cat-box">
-                        <i class="fas fa-solar-panel fa-2x text-secondary"></i>
-                        <h5>Estacionarias</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bloque Oscuro con Letras de Color Claro (Alta Visibilidad) -->
-    <section id="contacto" class="contacto-section">
-        <div class="container">
-            <div class="row g-5 align-items-center text-center text-md-start">
-                <div class="col-md-6">
-                    <h3 class="mb-4" style="color: var(--primary-color);">Baterías Danna</h3>
-                    <p><i class="fas fa-map-marker-alt me-2" style="color: var(--primary-color);"></i> Sunchales, Santa Fe, Argentina</p>
-                    <p><i class="fas fa-phone me-2" style="color: var(--primary-color);"></i> Teléfono: <a href="tel:03493420100">03493 - 420100</a></p>
-                    <p><i class="fas fa-clock me-2" style="color: var(--primary-color);"></i> Lun a Vie: 8:00 a 12:00 y 15:30 a 19:30 | Sáb: 8:00 a 12:30</p>
-                    <hr style="border-color: rgba(255,255,255,0.1);">
-                    <p class="small text-white-50">Aceptamos tarjetas de crédito, débito y planes de financiación locales.</p>
-                </div>
-                <div class="col-md-6">
-                    <h4 class="mb-3 text-white text-center">Ubicación</h4>
-                    <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27402.123!2d-61.564!3d-30.941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDU2JzI3LjYiUyA2McKwMzMnNTAuNCJX!5e0!3m2!1ses!2sar!4v1650000000000!5m2!1ses!2sar" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-4 bg-black text-center text-white-50 small">
-        <div class="container">
-            &copy; 2026 Baterías Danna. Todos los derechos reservados. Sunchales, Santa Fe.
-        </div>
+    <footer>
+        <p><strong>Baterías Danna</strong> - Sunchales, Santa Fe.</p>
+        <p>Copyright © 2024 - Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Botón Flotante de Llamada Telefónica -->
-    <a href="tel:03493420100" class="btn-phone-float" title="Llamar ahora">
-        <i class="fas fa-phone"></i>
-    </a>
-
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
