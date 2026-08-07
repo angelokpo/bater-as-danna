@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome para íconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <!-- Google Fonts: Montserrat para un estilo robusto y llamativo -->
+    <!-- Google Fonts: Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     
     <style>
@@ -18,14 +18,12 @@
             --light-bg: #f8f9fa;
         }
 
-        /* Estilos Generales y Tipografía */
         body { 
             font-family: 'Montserrat', sans-serif; 
             color: #2d3436;
             background-color: #ffffff;
         }
         
-        /* Quitar subrayados de todos los enlaces y botones */
         a, a:hover, .btn, .nav-link {
             text-decoration: none !important;
         }
@@ -34,7 +32,7 @@
         .navbar-custom {
             background-color: var(--primary-color);
             box-shadow: 0 2px 15px rgba(0,0,0,0.15);
-            padding: 15px 0;
+            padding: 12px 0;
         }
         .navbar-custom .navbar-brand {
             font-weight: 900;
@@ -59,15 +57,15 @@
             color: #ffffff !important;
         }
 
-        /* Logo SVG personalizado en el Navbar */
-        .brand-logo-icon {
-            width: 40px;
-            height: 40px;
-            display: inline-block;
-            vertical-align: middle;
+        /* Ajuste de la imagen del Logo */
+        .brand-logo-img {
+            height: 45px;
+            width: auto;
+            border-radius: 50%;
+            object-fit: contain;
         }
 
-        /* Hero Section con Efecto Parallax */
+        /* Hero Section con Parallax */
         .hero {
             position: relative;
             background-image: linear-gradient(rgba(17, 20, 23, 0.75), rgba(17, 20, 23, 0.75)), url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1200&q=80');
@@ -92,7 +90,7 @@
             margin: 20px auto 35px auto;
         }
 
-        /* Botones Grandes y Modernos */
+        /* Botones */
         .btn-custom-main {
             background-color: var(--primary-color);
             color: #ffffff !important;
@@ -127,7 +125,7 @@
             transform: translateY(-3px);
         }
 
-        /* Secciones */
+        /* Títulos de Sección */
         .section-title {
             font-weight: 900;
             font-size: 36px;
@@ -145,16 +143,15 @@
             border-radius: 3px;
         }
 
-        /* Sección de Servicios con Fondo Azul */
+        /* Sección Servicios */
         .servicios-section {
-            background-color: #0052a3; /* Azul de fondo para servicios */
+            background-color: #0052a3;
             color: #ffffff;
         }
         .servicios-section .section-title::after {
             background-color: #ffffff;
         }
 
-        /* Tarjetas de Servicios */
         .service-card {
             background: #ffffff;
             color: #2d3436;
@@ -204,7 +201,7 @@
             margin-top: 10px;
         }
 
-        /* Bloque de Contacto */
+        /* Contacto */
         .contacto-section {
             background-color: var(--dark-bg);
             color: #ffffff !important;
@@ -225,7 +222,7 @@
             color: #66b2ff;
         }
 
-        /* Botón Flotante de Llamada */
+        /* Botón de Llamada */
         .btn-phone-float {
             position: fixed;
             bottom: 25px;
@@ -250,14 +247,11 @@
 </head>
 <body>
 
-    <!-- Navbar Azul con Fondo e Ícono SVG integrado -->
+    <!-- Navbar con el logo real en imagen -->
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <svg class="brand-logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="50" fill="#ffffff"/>
-                    <path d="M 51 18 L 29 56 L 52 56 L 31 82 L 69 44 L 46 44 Z" fill="#ffcc00"/>
-                </svg>
+                <img src="logo.png" alt="Logo Baterías Danna" class="brand-logo-img">
                 BATERÍAS DANNA
             </a>
             <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -290,7 +284,7 @@
         </div>
     </header>
 
-    <!-- Servicios con Fondo Azul -->
+    <!-- Servicios -->
     <section id="servicios" class="py-5 servicios-section">
         <div class="container text-center">
             <h2 class="section-title text-white">Nuestros Servicios</h2>
@@ -328,7 +322,7 @@
         </div>
     </section>
 
-    <!-- Catálogo / Soluciones -->
+    <!-- Catálogo -->
     <section id="catalogo" class="py-5 bg-light-bg">
         <div class="container text-center">
             <h2 class="section-title">Soluciones de Energía</h2>
@@ -362,7 +356,7 @@
         </div>
     </section>
 
-    <!-- Sección Contacto -->
+    <!-- Contacto -->
     <section id="contacto" class="contacto-section">
         <div class="container">
             <div class="row g-5 align-items-center text-center text-md-start">
@@ -391,7 +385,7 @@
         </div>
     </footer>
 
-    <!-- Botón Flotante de Llamada Telefónica -->
+    <!-- Botón Flotante de Llamada -->
     <a href="tel:03493420100" class="btn-phone-float" title="Llamar ahora">
         <i class="fas fa-phone"></i>
     </a>
