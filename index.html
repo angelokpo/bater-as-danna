@@ -44,7 +44,7 @@
             letter-spacing: -1px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
         }
         .navbar-custom .nav-link {
             color: #ffffff !important;
@@ -60,22 +60,22 @@
             color: #ffffff !important;
         }
 
-        /* Estilo para el Logo de la Barra de Menú (Circulo Blanco, Rayos Amarillos) */
+        /* Logo de la Barra de Menú (Círculo Blanco, Rayos Amarillos Grandes) */
         .brand-logo-container {
-            width: 32px;
-            height: 32px;
-            background-color: #ffffff; /* Círculo de fondo blanco */
+            width: 38px;
+            height: 38px;
+            background-color: #ffffff;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-            overflow: hidden; /* Asegura el recorte */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
         .brand-logo-svg {
-            height: 20px; /* Tamaño del SVG dentro del contenedor */
-            width: 20px;
-            fill: var(--lightning-yellow); /* Color de los rayos */
+            height: 28px; /* Aumentado para que los rayos sobresalgan bien */
+            width: 28px;
+            fill: var(--lightning-yellow);
         }
 
         /* Hero Section */
@@ -264,14 +264,13 @@
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <!-- Contenedor del Logo (Círculo Blanco con Rayos Amarillos) -->
+                <!-- Contenedor del Logo (Círculo Blanco con Rayos Amarillos Grandes) -->
                 <div class="brand-logo-container">
-                    <svg class="brand-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Círculo de fondo blanco (definido en CSS) -->
+                    <svg class="brand-logo-svg" viewBox="15 15 70 70" xmlns="http://www.w3.org/2000/svg">
                         <!-- Rayo Izquierdo (Amarillo) -->
-                        <path d="M 44 24 L 26 53 L 43 53 L 35 77 L 53 46 L 38 46 Z" />
+                        <path d="M 44 22 L 24 53 L 42 53 L 33 78 L 54 45 L 37 45 Z" />
                         <!-- Rayo Derecho (Amarillo) -->
-                        <path d="M 64 24 L 46 53 L 63 53 L 55 77 L 73 46 L 58 46 Z" />
+                        <path d="M 65 22 L 45 53 L 63 53 L 54 78 L 75 45 L 58 45 Z" />
                     </svg>
                 </div>
                 BATERÍAS DANNA
@@ -415,4 +414,4 @@
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html> 
+</html>
