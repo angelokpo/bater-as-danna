@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Favicon (ícono de la pestaña) -->
     <link rel="icon" type="image/png" href="logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
     <style>
         :root {
             --primary-color: #0066cc; /* Azul principal */
+            --lightning-yellow: #FFD700; /* Color amarillo de los rayos */
             --dark-bg: #111417;
             --light-bg: #f8f9fa;
         }
@@ -29,7 +31,7 @@
             text-decoration: none !important;
         }
 
-        /* Navbar Azul con Letras Blancas */
+        /* Navbar Azul */
         .navbar-custom {
             background-color: var(--primary-color);
             box-shadow: 0 2px 15px rgba(0,0,0,0.15);
@@ -58,15 +60,25 @@
             color: #ffffff !important;
         }
 
-        /* Logo SVG blanco con doble rayo */
-        .brand-logo-svg {
-            height: 32px;
+        /* Estilo para el Logo de la Barra de Menú (Circulo Blanco, Rayos Amarillos) */
+        .brand-logo-container {
             width: 32px;
+            height: 32px;
+            background-color: #ffffff; /* Círculo de fondo blanco */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             flex-shrink: 0;
-            fill: #ffffff;
+            overflow: hidden; /* Asegura el recorte */
+        }
+        .brand-logo-svg {
+            height: 20px; /* Tamaño del SVG dentro del contenedor */
+            width: 20px;
+            fill: var(--lightning-yellow); /* Color de los rayos */
         }
 
-        /* Hero Section con Parallax */
+        /* Hero Section */
         .hero {
             position: relative;
             background-image: linear-gradient(rgba(17, 20, 23, 0.75), rgba(17, 20, 23, 0.75)), url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1200&q=80');
@@ -248,17 +260,20 @@
 </head>
 <body>
 
-    <!-- Navbar con el logo de DOBLE RAYO en SVG -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <svg class="brand-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="46" fill="none" stroke="#ffffff" stroke-width="8"/>
-                    <!-- Rayo Izquierdo -->
-                    <path d="M 44 24 L 26 53 L 43 53 L 35 77 L 53 46 L 38 46 Z" fill="#ffffff"/>
-                    <!-- Rayo Derecho -->
-                    <path d="M 64 24 L 46 53 L 63 53 L 55 77 L 73 46 L 58 46 Z" fill="#ffffff"/>
-                </svg>
+                <!-- Contenedor del Logo (Círculo Blanco con Rayos Amarillos) -->
+                <div class="brand-logo-container">
+                    <svg class="brand-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Círculo de fondo blanco (definido en CSS) -->
+                        <!-- Rayo Izquierdo (Amarillo) -->
+                        <path d="M 44 24 L 26 53 L 43 53 L 35 77 L 53 46 L 38 46 Z" />
+                        <!-- Rayo Derecho (Amarillo) -->
+                        <path d="M 64 24 L 46 53 L 63 53 L 55 77 L 73 46 L 58 46 Z" />
+                    </svg>
+                </div>
                 BATERÍAS DANNA
             </a>
             <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -400,5 +415,4 @@
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
-
+</html> 
