@@ -41,7 +41,7 @@
             letter-spacing: -1px;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
         }
         .navbar-custom .nav-link {
             color: #ffffff !important;
@@ -57,12 +57,12 @@
             color: #ffffff !important;
         }
 
-        /* Ajuste de la imagen del Logo */
-        .brand-logo-img {
-            height: 45px;
-            width: auto;
-            border-radius: 50%;
-            object-fit: contain;
+        /* Logo SVG blanco alineado a las letras */
+        .brand-logo-svg {
+            height: 32px;
+            width: 32px;
+            flex-shrink: 0;
+            fill: #ffffff;
         }
 
         /* Hero Section con Parallax */
@@ -247,11 +247,14 @@
 </head>
 <body>
 
-    <!-- Navbar con el logo real en imagen -->
+    <!-- Navbar con el logo blanco integrado -->
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="Logo Baterías Danna" class="brand-logo-img">
+                <svg class="brand-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="46" fill="none" stroke="#ffffff" stroke-width="8"/>
+                    <path d="M 45 18 L 27 52 L 48 52 L 35 82 L 73 45 L 52 45 L 65 18 Z" fill="#ffffff"/>
+                </svg>
                 BATERÍAS DANNA
             </a>
             <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
