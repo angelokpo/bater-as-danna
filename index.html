@@ -3,14 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baterías Danna | Sunchales</title>
+    
+    <!-- Título optimizado con y sin acento para SEO -->
+    <title>Baterías Danna | Baterias Danna Sunchales</title>
+    
+    <!-- Metadatos SEO optimizados con y sin acento -->
+    <meta name="description" content="Baterías Danna en Sunchales. Venta, instalación, carga y diagnóstico de baterias para autos, motos, camiones y maquinaria agrícola. Atendemos consultas por Baterias Danna sin acento.">
+    <meta name="keywords" content="baterias danna, baterias danna sunchales, baterias, sunchales, taller de baterias, carga de baterias, baterias de autos sunchales">
+    
+    <!-- URL Canónica -->
+    <link rel="canonical" href="https://bateríasdanna.com.ar/">
+
+    <!-- Metadatos Open Graph -->
+    <meta property="og:title" content="Baterías Danna | Baterias Danna Sunchales">
+    <meta property="og:description" content="Energía confiable para tu vehículo. Venta, instalación y diagnóstico de baterías en Sunchales.">
+    <meta property="og:type" content="business.business">
+    <meta property="og:locale" content="es_AR">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome para íconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Google Fonts: Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-    
+
+    <!-- Datos estructurados para negocio local -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AutomotiveBusiness",
+        "name": "Baterías Danna",
+        "alternateName": "Baterias Danna",
+        "telephone": "+543493420100",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Sunchales",
+            "addressRegion": "Santa Fe",
+            "addressCountry": "AR"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "08:00",
+                "closes": "12:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+                "opens": "15:30",
+                "closes": "19:30"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "08:00",
+                "closes": "12:30"
+            }
+        ]
+    }
+    </script>
+
     <style>
         :root {
             --primary-color: #0066cc; /* Azul principal */
@@ -57,24 +113,27 @@
             color: #ffffff !important;
         }
 
-        /* Logo SVG blanco con doble rayo */
+        /* Logo SVG */
         .brand-logo-svg {
-            height: 32px;
-            width: 32px;
+            height: 34px;
+            width: 34px;
             flex-shrink: 0;
-            fill: #ffffff;
         }
 
-        /* Hero Section con Parallax */
+        /* Hero Section */
         .hero {
             position: relative;
             background-image: linear-gradient(rgba(17, 20, 23, 0.75), rgba(17, 20, 23, 0.75)), url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1200&q=80');
-            background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             padding: 140px 0;
             color: #ffffff;
+        }
+        @media (min-width: 992px) {
+            .hero {
+                background-attachment: fixed;
+            }
         }
         .hero h1 {
             font-weight: 900;
@@ -183,12 +242,17 @@
         }
 
         /* Categorías */
-        .cat-box {
+        .catalogo-section {
             background-color: var(--light-bg);
+        }
+        .cat-box {
+            background-color: #ffffff;
             border-radius: 12px;
             padding: 25px;
             transition: all 0.3s;
             border: 1px solid transparent;
+            display: block;
+            color: inherit;
         }
         .cat-box:hover {
             background-color: #ffffff;
@@ -199,6 +263,7 @@
             font-weight: 700;
             font-size: 16px;
             margin-top: 10px;
+            color: #2d3436;
         }
 
         /* Contacto */
@@ -247,20 +312,18 @@
 </head>
 <body>
 
-    <!-- Navbar con el logo de DOBLE RAYO en SVG -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <svg class="brand-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="50" cy="50" r="46" fill="none" stroke="#ffffff" stroke-width="8"/>
-                    <!-- Rayo Izquierdo -->
-                    <path d="M 44 24 L 26 53 L 43 53 L 35 77 L 53 46 L 38 46 Z" fill="#ffffff"/>
-                    <!-- Rayo Derecho -->
-                    <path d="M 64 24 L 46 53 L 63 53 L 55 77 L 73 46 L 58 46 Z" fill="#ffffff"/>
+            <a class="navbar-brand" href="#inicio">
+                <svg class="brand-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Baterías Danna">
+                    <circle cx="50" cy="50" r="48" fill="#ffffff"/>
+                    <path d="M 41 30 L 19 56 L 41 56 L 32 78 L 53 50 L 34 50 Z" fill="#0066cc"/>
+                    <path d="M 67 18 L 43 47 L 66 47 L 55 71 L 80 40 L 59 40 Z" fill="#0066cc"/>
                 </svg>
                 BATERÍAS DANNA
             </a>
-            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Abrir menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -279,10 +342,10 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-9">
-                    <h1>Energía Confiable para tu Vehículo en <span style="color: #66b2ff;">Sunchales</span></h1>
-                    <p>Venta, instalación y diagnóstico de baterías para autos, motos, camiones y maquinaria agrícola. ¡No te quedes a pie!</p>
+                    <h1>Baterías Danna | Energía Confiable en <span style="color: #66b2ff;">Sunchales</span></h1>
+                    <p>Venta, instalación y diagnóstico de baterias para autos, motos, camiones y maquinaria agrícola. ¡No te quedes a pie!</p>
                     <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-                        <a href="tel:03493420100" class="btn btn-custom-main"><i class="fas fa-phone me-2"></i>Llamar al Taller</a>
+                        <a href="tel:03493420100" class="btn btn-custom-main"><i class="fas fa-phone me-2" aria-hidden="true"></i>Llamar al Taller</a>
                         <a href="#contacto" class="btn btn-custom-outline">Dónde Estamos</a>
                     </div>
                 </div>
@@ -293,33 +356,33 @@
     <!-- Servicios -->
     <section id="servicios" class="py-5 servicios-section">
         <div class="container text-center">
-            <h2 class="section-title text-white">Nuestros Servicios</h2>
-            <p class="text-white-50 mb-5">Atención rápida y profesional en la ciudad</p>
+            <h2 class="section-title text-white">Nuestros Servicios de Baterias</h2>
+            <p class="text-white-50 mb-5">Atención rápida y profesional en la ciudad de Sunchales</p>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
-                        <div class="icon-box"><i class="fas fa-bolt fa-3x"></i></div>
-                        <h4>Carga y Mantenimiento</h4>
+                        <div class="icon-box"><i class="fas fa-bolt fa-3x" aria-hidden="true"></i></div>
+                        <h4>Carga y Mantenimiento de Baterias</h4>
                         <p>Realizamos cargas lentas y un mantenimiento completo de bornes y niveles de líquido para extender la vida útil de tu batería.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
-                        <div class="icon-box"><i class="fas fa-temperature-high fa-3x"></i></div>
+                        <div class="icon-box"><i class="fas fa-temperature-high fa-3x" aria-hidden="true"></i></div>
                         <h4>Limpieza de Radiadores</h4>
                         <p>Servicio especializado de limpieza, baqueteado y control de radiadores para evitar sobrecalentamientos y proteger el motor.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
-                        <div class="icon-box"><i class="fas fa-truck-moving fa-3x"></i></div>
+                        <div class="icon-box"><i class="fas fa-truck-moving fa-3x" aria-hidden="true"></i></div>
                         <h4>Instalación a Domicilio</h4>
                         <p>Si te quedaste sin batería en Sunchales, comunícate con nosotros y realizamos el cambio en tu ubicación en el acto.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="service-card">
-                        <div class="icon-box"><i class="fas fa-recycle fa-3x"></i></div>
+                        <div class="icon-box"><i class="fas fa-recycle fa-3x" aria-hidden="true"></i></div>
                         <h4>Reciclaje de Usadas</h4>
                         <p>Tomamos tu batería vieja como parte de pago, dándote un descuento extra y asegurando su desguace ecológico.</p>
                     </div>
@@ -329,34 +392,34 @@
     </section>
 
     <!-- Catálogo -->
-    <section id="catalogo" class="py-5 bg-light-bg">
+    <section id="catalogo" class="py-5 catalogo-section">
         <div class="container text-center">
             <h2 class="section-title">Soluciones de Energía</h2>
-            <p class="text-muted mb-5">Modelos reforzados y marcas líderes para cada necesidad</p>
+            <p class="text-muted mb-5">Modelos reforzados y marcas líderes en baterias para cada necesidad</p>
             <div class="row g-4">
                 <div class="col-6 col-md-3">
-                    <div class="cat-box">
-                        <i class="fas fa-car fa-2x text-secondary"></i>
+                    <a href="tel:03493420100" class="cat-box">
+                        <i class="fas fa-car fa-2x text-secondary" aria-hidden="true"></i>
                         <h5>Automóviles</h5>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="cat-box">
-                        <i class="fas fa-motorcycle fa-2x text-secondary"></i>
+                    <a href="tel:03493420100" class="cat-box">
+                        <i class="fas fa-motorcycle fa-2x text-secondary" aria-hidden="true"></i>
                         <h5>Motocicletas</h5>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="cat-box">
-                        <i class="fas fa-tractor fa-2x text-secondary"></i>
+                    <a href="tel:03493420100" class="cat-box">
+                        <i class="fas fa-tractor fa-2x text-secondary" aria-hidden="true"></i>
                         <h5>Línea Pesada / Agro</h5>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-6 col-md-3">
-                    <div class="cat-box">
-                        <i class="fas fa-solar-panel fa-2x text-secondary"></i>
+                    <a href="tel:03493420100" class="cat-box">
+                        <i class="fas fa-solar-panel fa-2x text-secondary" aria-hidden="true"></i>
                         <h5>Estacionarias</h5>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -367,17 +430,17 @@
         <div class="container">
             <div class="row g-5 align-items-center text-center text-md-start">
                 <div class="col-md-6">
-                    <h3 class="mb-4" style="color: #66b2ff;">Baterías Danna</h3>
-                    <p><i class="fas fa-map-marker-alt me-2" style="color: #66b2ff;"></i> Sunchales, Santa Fe, Argentina</p>
-                    <p><i class="fas fa-phone me-2" style="color: #66b2ff;"></i> Teléfono: <a href="tel:03493420100">03493 - 420100</a></p>
-                    <p><i class="fas fa-clock me-2" style="color: #66b2ff;"></i> Lun a Vie: 8:00 a 12:00 y 15:30 a 19:30 | Sáb: 8:00 a 12:30</p>
+                    <h3 class="mb-4" style="color: #66b2ff;">Baterías Danna / Baterias Danna</h3>
+                    <p><i class="fas fa-map-marker-alt me-2" style="color: #66b2ff;" aria-hidden="true"></i> Sunchales, Santa Fe, Argentina</p>
+                    <p><i class="fas fa-phone me-2" style="color: #66b2ff;" aria-hidden="true"></i> Teléfono: <a href="tel:03493420100">03493 - 420100</a></p>
+                    <p><i class="fas fa-clock me-2" style="color: #66b2ff;" aria-hidden="true"></i> Lun a Vie: 8:00 a 12:00 y 15:30 a 19:30 | Sáb: 8:00 a 12:30</p>
                     <hr style="border-color: rgba(255,255,255,0.1);">
                     <p class="small text-white-50">Aceptamos tarjetas de crédito, débito y planes de financiación locales.</p>
                 </div>
                 <div class="col-md-6">
                     <h4 class="mb-3 text-white text-center">Ubicación</h4>
                     <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27402.123!2d-61.564!3d-30.941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDU2JzI3LjYiUyA2McKwMzMnNTAuNCJX!5e0!3m2!1ses!2sar!4v1650000000000!5m2!1ses!2sar" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27402.123!2d-61.564!3d-30.941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDU2JzI3LjYiUyA2McKwMzMnNTAuNCJX!5e0!3m2!1ses!2sar!4v1650000000000!5m2!1ses!2sar" allowfullscreen="" loading="lazy" title="Ubicación de Baterías Danna en el mapa"></iframe>
                     </div>
                 </div>
             </div>
@@ -392,8 +455,8 @@
     </footer>
 
     <!-- Botón Flotante de Llamada -->
-    <a href="tel:03493420100" class="btn-phone-float" title="Llamar ahora">
-        <i class="fas fa-phone"></i>
+    <a href="tel:03493420100" class="btn-phone-float" title="Llamar ahora" aria-label="Llamar ahora">
+        <i class="fas fa-phone" aria-hidden="true"></i>
     </a>
 
     <!-- Bootstrap JS Bundle -->
