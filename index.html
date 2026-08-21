@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Título optimizado con y sin acento -->
+    <!-- Título optimizado con y sin acento para SEO -->
     <title>Baterías Danna | Baterias Danna Sunchales</title>
     
     <!-- Metadatos SEO -->
     <meta name="description" content="Baterías Danna en Sunchales. Venta, instalación, carga y diagnóstico de baterias para autos, motos, camiones y maquinaria agrícola. Reparación de radiadores.">
-    <meta name="keywords" content="baterias danna, baterias danna sunchales, baterias sunchales, radiadores sunchales, taller baterias danna">
+    <meta name="keywords" content="baterias danna, baterias danna sunchales, baterias, sunchales, taller de baterias, carga de baterias, baterias de autos sunchales, radiadores sunchales">
     
     <!-- URL Canónica -->
     <link rel="canonical" href="https://bateríasdanna.com.ar/">
@@ -29,7 +29,7 @@
     <!-- FontAwesome para íconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Google Fonts: Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 
     <!-- Datos estructurados Schema.org -->
     <script type="application/ld+json">
@@ -72,158 +72,147 @@
     <style>
         :root {
             --primary-color: #0066cc; /* Azul principal */
-            --lightning-yellow: #FFD700; /* Amarillo brillante */
             --dark-bg: #111417;
             --light-bg: #f8f9fa;
-            --whatsapp-color: #25d366;
+            --whatsapp-green: #25d366;
         }
 
         body { 
             font-family: 'Montserrat', sans-serif; 
-            color: #2d3436; 
-            background-color: #ffffff; 
+            color: #2d3436;
+            background-color: #ffffff;
         }
         
         a, a:hover, .btn, .nav-link {
             text-decoration: none !important;
         }
 
-        /* Navbar */
-        .navbar-custom { 
-            background-color: var(--primary-color); 
-            padding: 16px 0;
+        /* Navbar Azul con Letras Blancas */
+        .navbar-custom {
+            background-color: var(--primary-color);
             box-shadow: 0 2px 15px rgba(0,0,0,0.15);
+            padding: 12px 0;
         }
-        .navbar-brand { 
-            font-weight: 900; 
+        .navbar-custom .navbar-brand {
+            font-weight: 900;
             font-size: 24px;
-            color: #ffffff !important; 
-            display: flex; 
-            align-items: center; 
-            gap: 12px; 
-            letter-spacing: -0.5px;
-        }
-        
-        /* Contenedor del Logo (Círculo Blanco) */
-        .brand-logo-container {
-            width: 44px;
-            height: 44px;
-            background-color: #ffffff;
-            border-radius: 50%;
+            color: #ffffff !important;
+            letter-spacing: -1px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            gap: 10px;
         }
-        
-        .brand-logo-svg {
-            width: 32px;
-            height: 32px;
-            fill: var(--lightning-yellow);
-        }
-
-        .navbar-custom .nav-link { 
-            color: #ffffff !important; 
-            font-weight: 700; 
-            font-size: 14px;
-            text-transform: uppercase; 
-            margin: 0 10px; 
-            opacity: 0.9;
+        .navbar-custom .nav-link {
+            color: #ffffff !important;
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            margin: 0 10px;
             transition: opacity 0.3s;
+            opacity: 0.9;
         }
         .navbar-custom .nav-link:hover {
             opacity: 1;
+            color: #ffffff !important;
         }
 
-        /* Hero Section */
-        .hero { 
+        /* Logo SVG */
+        .brand-logo-svg {
+            height: 34px;
+            width: 34px;
+            flex-shrink: 0;
+        }
+
+        /* Hero Section con imagen real del local */
+        .hero {
             position: relative;
-            background-image: linear-gradient(rgba(17, 20, 23, 0.78), rgba(17, 20, 23, 0.78)), url('frente.jpg'); 
-            background-size: cover; 
+            background-image: linear-gradient(rgba(17, 20, 23, 0.80), rgba(17, 20, 23, 0.80)), url('frente.jpg');
             background-position: center;
-            padding: 150px 0; 
-            color: #ffffff; 
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 140px 0;
+            color: #ffffff;
         }
         @media (min-width: 992px) {
             .hero {
                 background-attachment: fixed;
             }
         }
-        .hero h1 { 
-            font-weight: 900; 
-            font-size: 46px; 
+        .hero h1 {
+            font-weight: 900;
+            font-size: 48px;
             letter-spacing: -1px;
             line-height: 1.2;
         }
-        .hero p { 
-            font-size: 18px; 
-            font-weight: 400; 
-            opacity: 0.95; 
-            max-width: 720px; 
-            margin: 20px auto 35px auto; 
+        .hero p {
+            font-size: 18px;
+            font-weight: 400;
+            opacity: 0.95;
+            max-width: 720px;
+            margin: 20px auto 35px auto;
         }
 
         /* Botones */
-        .btn-custom-main { 
-            background-color: var(--primary-color); 
-            color: #ffffff !important; 
-            font-weight: 800; 
-            font-size: 15px; 
-            text-transform: uppercase; 
-            padding: 14px 30px; 
-            border-radius: 50px; 
-            border: 2px solid var(--primary-color); 
-            transition: all 0.3s ease; 
-            box-shadow: 0 4px 15px rgba(0, 102, 204, 0.35); 
+        .btn-custom-main {
+            background-color: var(--primary-color);
+            color: #ffffff !important;
+            font-weight: 900;
+            font-size: 15px;
+            text-transform: uppercase;
+            padding: 14px 32px;
+            border-radius: 50px;
+            border: 2px solid var(--primary-color);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
         }
-        .btn-custom-main:hover { 
-            background-color: #0052a3; 
-            transform: translateY(-2px); 
+        .btn-custom-main:hover {
+            background-color: transparent;
+            color: #ffffff !important;
+            transform: translateY(-3px);
         }
-
-        .btn-custom-wa { 
-            background-color: var(--whatsapp-color); 
-            color: #ffffff !important; 
-            font-weight: 800; 
-            font-size: 15px; 
-            text-transform: uppercase; 
-            padding: 14px 30px; 
-            border-radius: 50px; 
-            border: 2px solid var(--whatsapp-color); 
-            transition: all 0.3s ease; 
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); 
+        .btn-custom-wa {
+            background-color: var(--whatsapp-green);
+            color: #ffffff !important;
+            font-weight: 900;
+            font-size: 15px;
+            text-transform: uppercase;
+            padding: 14px 32px;
+            border-radius: 50px;
+            border: 2px solid var(--whatsapp-green);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
         }
-        .btn-custom-wa:hover { 
-            background-color: #1eb954; 
-            transform: translateY(-2px); 
+        .btn-custom-wa:hover {
+            background-color: transparent;
+            color: #ffffff !important;
+            transform: translateY(-3px);
         }
 
         /* Títulos de Sección */
-        .section-title { 
-            font-weight: 900; 
-            font-size: 34px; 
-            margin-bottom: 15px; 
-            position: relative; 
-            display: inline-block; 
+        .section-title {
+            font-weight: 900;
+            font-size: 36px;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
         }
-        .section-title::after { 
-            content: ''; 
-            display: block; 
-            width: 60px; 
-            height: 4px; 
-            background-color: var(--primary-color); 
-            margin: 10px auto 0 auto; 
-            border-radius: 2px; 
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 5px;
+            background-color: var(--primary-color);
+            margin: 10px auto 0 auto;
+            border-radius: 3px;
         }
 
-        /* Galería */
+        /* Galería Taller */
         .gallery-card {
             border-radius: 14px;
             overflow: hidden;
             box-shadow: 0 8px 25px rgba(0,0,0,0.1);
             position: relative;
-            height: 250px;
+            height: 240px;
         }
         .gallery-card img {
             width: 100%;
@@ -246,121 +235,128 @@
             font-size: 14px;
         }
 
-        /* Servicios */
-        .servicios-section { 
-            background-color: #0052a3; 
-            color: #ffffff; 
-            padding: 85px 0;
+        /* Sección Servicios */
+        .servicios-section {
+            background-color: #0052a3;
+            color: #ffffff;
         }
-        .servicios-section .section-title::after { 
-            background-color: #ffffff; 
+        .servicios-section .section-title::after {
+            background-color: #ffffff;
         }
-        .service-card { 
-            background: #ffffff; 
-            color: #2d3436; 
-            border-radius: 16px; 
-            padding: 35px 25px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
-            height: 100%; 
-            transition: transform 0.3s ease; 
+
+        .service-card {
+            background: #ffffff;
+            color: #2d3436;
+            border: none;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
         }
-        .service-card:hover { 
-            transform: translateY(-6px); 
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
         }
-        .service-card .icon-box { 
-            color: var(--primary-color); 
-            margin-bottom: 20px; 
+        .service-card .icon-box {
+            color: var(--primary-color);
+            margin-bottom: 20px;
         }
-        .service-card h4 { 
-            font-weight: 800; 
-            font-size: 19px; 
-            margin-bottom: 12px; 
-            color: #111417; 
+        .service-card h4 {
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #111417;
         }
-        .service-card p { 
-            font-size: 14px; 
-            color: #555; 
-            line-height: 1.6; 
+        .service-card p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
         }
 
         /* Categorías */
         .catalogo-section {
             background-color: var(--light-bg);
-            padding: 85px 0;
         }
-        .cat-box { 
-            background-color: #ffffff; 
-            border-radius: 12px; 
-            padding: 25px; 
-            transition: all 0.3s; 
-            border: 1px solid #eee; 
-            display: block; 
-            color: inherit; 
+        .cat-box {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 25px;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+            display: block;
+            color: inherit;
         }
-        .cat-box:hover { 
-            border-color: var(--primary-color); 
-            transform: translateY(-4px); 
-            box-shadow: 0 8px 20px rgba(0,0,0,0.06); 
+        .cat-box:hover {
+            background-color: #ffffff;
+            border-color: var(--primary-color);
+            transform: scale(1.05);
         }
-        .cat-box h5 { 
-            font-weight: 700; 
-            font-size: 16px; 
-            margin-top: 10px; 
-            color: #2d3436; 
+        .cat-box h5 {
+            font-weight: 700;
+            font-size: 16px;
+            margin-top: 10px;
+            color: #2d3436;
         }
 
         /* Contacto */
-        .contacto-section { 
-            background-color: var(--dark-bg); 
-            color: #ffffff !important; 
-            padding: 85px 0; 
+        .contacto-section {
+            background-color: var(--dark-bg);
+            color: #ffffff !important;
+            padding: 80px 0;
         }
-        .contacto-section h3 { 
-            font-weight: 900; 
+        .contacto-section h3, .contacto-section h4 {
+            font-weight: 900;
         }
-        .contacto-section p { 
-            color: #e0e0e0; 
-            font-size: 15px; 
+        .contacto-section p {
+            color: #e0e0e0;
+            font-size: 16px;
+        }
+        .contacto-section a {
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+        .contacto-section a:hover {
+            color: #66b2ff;
         }
 
-        /* Botón WhatsApp Flotante */
-        .btn-wa-float { 
-            position: fixed; 
-            bottom: 25px; 
-            right: 25px; 
-            background-color: var(--whatsapp-color); 
-            color: #ffffff !important; 
-            border-radius: 50%; 
-            width: 62px; 
-            height: 62px; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            font-size: 32px; 
-            box-shadow: 0 4px 20px rgba(0,0,0,0.35); 
-            z-index: 1000; 
-            transition: transform 0.3s ease; 
+        /* Botón Flotante de WhatsApp */
+        .btn-wa-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: var(--whatsapp-green);
+            color: #ffffff !important;
+            border-radius: 50%;
+            width: 65px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: transform 0.3s ease;
         }
         .btn-wa-float:hover { 
-            transform: scale(1.1); 
+            transform: scale(1.1) rotate(10deg); 
         }
     </style>
 </head>
 <body>
 
-    <!-- Barra de Navegación -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#inicio">
-                <div class="brand-logo-container">
-                    <svg class="brand-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M 40 10 L 16 52 L 38 52 L 26 90 L 56 44 L 34 44 Z" />
-                        <path d="M 64 10 L 40 52 L 62 52 L 50 90 L 80 44 L 58 44 Z" />
-                    </svg>
-                </div>
+                <svg class="brand-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Baterías Danna">
+                    <circle cx="50" cy="50" r="48" fill="#ffffff"/>
+                    <path d="M 41 30 L 19 56 L 41 56 L 32 78 L 53 50 L 34 50 Z" fill="#0066cc"/>
+                    <path d="M 67 18 L 43 47 L 66 47 L 55 71 L 80 40 L 59 40 Z" fill="#0066cc"/>
+                </svg>
                 BATERÍAS DANNA
             </a>
-            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Abrir navegación">
+            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Abrir menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -375,27 +371,27 @@
         </div>
     </nav>
 
-    <!-- Portada Principal -->
+    <!-- Hero Section -->
     <header id="inicio" class="hero text-center">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-9">
-                    <h1>Energía Confiable para tu Vehículo en <span style="color: #66b2ff;">Sunchales</span></h1>
-                    <p>Venta, instalación y diagnóstico de baterías para autos, motos, camiones y maquinaria agrícola. Servicio especializado de radiadores.</p>
+                    <h1>Baterías Danna | Energía Confiable en <span style="color: #66b2ff;">Sunchales</span></h1>
+                    <p>Venta, instalación y diagnóstico de baterias para autos, motos, camiones y maquinaria agrícola. Servicio especializado de radiadores.</p>
                     <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-                        <a href="tel:03493420100" class="btn btn-custom-main"><i class="fas fa-phone me-2"></i>Tel. Fijo: 420100[cite: 1]</a>
-                        <a href="https://wa.me/5493493438294?text=Hola%20Bater%C3%ADas%20Danna,%20quer%C3%ADa%20hacerles%20una%20consulta." target="_blank" class="btn btn-custom-wa"><i class="fab fa-whatsapp me-2"></i>WhatsApp: 3493-438294</a>
+                        <a href="tel:03493420100" class="btn btn-custom-main"><i class="fas fa-phone me-2" aria-hidden="true"></i>Tel. Fijo: 420100[cite: 1]</a>
+                        <a href="https://wa.me/5493493438294?text=Hola%20Bater%C3%ADas%20Danna,%20quer%C3%ADa%20hacerles%20una%20consulta." target="_blank" class="btn btn-custom-wa"><i class="fab fa-whatsapp me-2" aria-hidden="true"></i>WhatsApp: 3493-438294</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Galería Real del Taller -->
+    <!-- Galería Taller -->
     <section id="taller" class="py-5">
         <div class="container text-center">
             <h2 class="section-title">Nuestro Taller</h2>
-            <p class="text-muted mb-5">Trayectoria y oficio en baterías y radiadores</p>
+            <p class="text-muted mb-5">Oficio y trayectoria en baterías y radiadores en Sunchales</p>
             <div class="row g-4 text-start">
                 <div class="col-6 col-md-3">
                     <div class="gallery-card">
@@ -405,19 +401,19 @@
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="gallery-card">
-                        <img src="taller-radiadores.jpg" alt="Taller de reparación de radiadores en Sunchales">
-                        <div class="gallery-card-label">Taller de Reparación</div>
+                        <img src="taller-radiadores.jpg" alt="Taller de reparación de radiadores">
+                        <div class="gallery-card-label">Reparación de Radiadores</div>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="gallery-card">
-                        <img src="radiador-aluminio.jpg" alt="Radiadores de aluminio para línea liviana y pesada">
+                        <img src="radiador-aluminio.jpg" alt="Radiadores nuevos de aluminio">
                         <div class="gallery-card-label">Radiadores Nuevos</div>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="gallery-card">
-                        <img src="mural.jpg" alt="Mural exterior Baterías Danna">
+                        <img src="mural.jpg" alt="Frente y mural exterior de Baterías Danna">
                         <div class="gallery-card-label">Av. Hipólito Yrigoyen 1385[cite: 1]</div>
                     </div>
                 </div>
@@ -426,35 +422,35 @@
     </section>
 
     <!-- Servicios -->
-    <section id="servicios" class="servicios-section text-center">
-        <div class="container">
-            <h2 class="section-title text-white">Nuestros Servicios</h2>
-            <p class="text-white-50 mb-5">Atención rápida y profesional en la ciudad</p>
-            <div class="row g-4 justify-content-center text-start">
+    <section id="servicios" class="py-5 servicios-section">
+        <div class="container text-center">
+            <h2 class="section-title text-white">Nuestros Servicios de Baterias</h2>
+            <p class="text-white-50 mb-5">Atención rápida y profesional en la ciudad de Sunchales</p>
+            <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="icon-box"><i class="fas fa-bolt fa-3x"></i></div>
-                        <h4>Carga y Mantenimiento</h4>
+                    <div class="service-card text-start">
+                        <div class="icon-box"><i class="fas fa-bolt fa-3x" aria-hidden="true"></i></div>
+                        <h4>Carga y Mantenimiento de Baterias</h4>
                         <p>Realizamos cargas lentas y un mantenimiento completo de bornes y niveles de líquido para extender la vida útil de tu batería[cite: 1].</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="icon-box"><i class="fas fa-temperature-high fa-3x"></i></div>
+                    <div class="service-card text-start">
+                        <div class="icon-box"><i class="fas fa-temperature-high fa-3x" aria-hidden="true"></i></div>
                         <h4>Limpieza de Radiadores</h4>
                         <p>Servicio especializado de limpieza, baqueteado y control de radiadores para evitar sobrecalentamientos y proteger el motor[cite: 1].</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="icon-box"><i class="fas fa-truck-moving fa-3x"></i></div>
+                    <div class="service-card text-start">
+                        <div class="icon-box"><i class="fas fa-truck-moving fa-3x" aria-hidden="true"></i></div>
                         <h4>Instalación a Domicilio</h4>
                         <p>Si te quedaste sin batería en Sunchales, comunícate con nosotros y realizamos el cambio en tu ubicación en el acto[cite: 1].</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="icon-box"><i class="fas fa-recycle fa-3x"></i></div>
+                    <div class="service-card text-start">
+                        <div class="icon-box"><i class="fas fa-recycle fa-3x" aria-hidden="true"></i></div>
                         <h4>Reciclaje de Usadas</h4>
                         <p>Tomamos tu batería vieja como parte de pago, dándote un descuento extra y asegurando su desguace ecológico[cite: 1].</p>
                     </div>
@@ -464,32 +460,32 @@
     </section>
 
     <!-- Catálogo -->
-    <section id="catalogo" class="catalogo-section text-center">
-        <div class="container">
+    <section id="catalogo" class="py-5 catalogo-section">
+        <div class="container text-center">
             <h2 class="section-title">Soluciones de Energía</h2>
-            <p class="text-muted mb-5">Modelos reforzados y marcas líderes para cada necesidad</p>
+            <p class="text-muted mb-5">Modelos reforzados y marcas líderes en baterias para cada necesidad</p>
             <div class="row g-4">
                 <div class="col-6 col-md-3">
                     <a href="https://wa.me/5493493438294?text=Hola%20Bater%C3%ADas%20Danna,%20quer%C3%ADa%20consultar%20por%20bater%C3%ADas%20para%20autom%C3%B3viles." target="_blank" class="cat-box">
-                        <i class="fas fa-car fa-2x text-secondary"></i>
+                        <i class="fas fa-car fa-2x text-secondary" aria-hidden="true"></i>
                         <h5>Automóviles</h5>
                     </a>
                 </div>
                 <div class="col-6 col-md-3">
                     <a href="https://wa.me/5493493438294?text=Hola%20Bater%C3%ADas%20Danna,%20quer%C3%ADa%20consultar%20por%20bater%C3%ADas%20para%20motos." target="_blank" class="cat-box">
-                        <i class="fas fa-motorcycle fa-2x text-secondary"></i>
+                        <i class="fas fa-motorcycle fa-2x text-secondary" aria-hidden="true"></i>
                         <h5>Motocicletas</h5>
                     </a>
                 </div>
                 <div class="col-6 col-md-3">
                     <a href="https://wa.me/5493493438294?text=Hola%20Bater%C3%ADas%20Danna,%20quer%C3%ADa%20consultar%20por%20bater%C3%ADas%20para%20l%C3%ADnea%20pesada/agro." target="_blank" class="cat-box">
-                        <i class="fas fa-tractor fa-2x text-secondary"></i>
+                        <i class="fas fa-tractor fa-2x text-secondary" aria-hidden="true"></i>
                         <h5>Línea Pesada / Agro</h5>
                     </a>
                 </div>
                 <div class="col-6 col-md-3">
                     <a href="https://wa.me/5493493438294?text=Hola%20Bater%C3%ADas%20Danna,%20quer%C3%ADa%20consultar%20por%20bater%C3%ADas%20estacionarias." target="_blank" class="cat-box">
-                        <i class="fas fa-solar-panel fa-2x text-secondary"></i>
+                        <i class="fas fa-solar-panel fa-2x text-secondary" aria-hidden="true"></i>
                         <h5>Estacionarias</h5>
                     </a>
                 </div>
@@ -502,18 +498,18 @@
         <div class="container">
             <div class="row g-5 align-items-center text-center text-md-start">
                 <div class="col-md-6">
-                    <h3 class="mb-4" style="color: #66b2ff;">Baterías Danna</h3>
-                    <p><i class="fas fa-map-marker-alt me-2" style="color: #66b2ff;"></i> Av. Hipólito Yrigoyen 1385, Sunchales, Santa Fe[cite: 1]</p>
-                    <p><i class="fas fa-phone-alt me-2" style="color: #66b2ff;"></i> Teléfono Fijo: <a href="tel:03493420100" class="text-white fw-bold">03493 - 420100[cite: 1]</a></p>
-                    <p><i class="fab fa-whatsapp me-2" style="color: var(--whatsapp-color);"></i> WhatsApp: <a href="https://wa.me/5493493438294?text=Hola%20Bater%C3%ADas%20Danna,%20quer%C3%ADa%20hacerles%20una%20consulta." target="_blank" class="text-white fw-bold">3493 - 438294</a></p>
-                    <p><i class="fas fa-clock me-2" style="color: #66b2ff;"></i> Lun a Vie: 8:00 a 12:00 y 15:30 a 19:30 | Sáb: 8:00 a 12:30[cite: 1]</p>
-                    <hr style="border-color: rgba(255,255,255,0.15);">
+                    <h3 class="mb-4" style="color: #66b2ff;">Baterías Danna / Baterias Danna</h3>
+                    <p><i class="fas fa-map-marker-alt me-2" style="color: #66b2ff;" aria-hidden="true"></i> Av. Hipólito Yrigoyen 1385, Sunchales, Santa Fe, Argentina[cite: 1]</p>
+                    <p><i class="fas fa-phone-alt me-2" style="color: #66b2ff;" aria-hidden="true"></i> Teléfono Fijo: <a href="tel:03493420100" class="text-white fw-bold">03493 - 420100[cite: 1]</a></p>
+                    <p><i class="fab fa-whatsapp me-2" style="color: var(--whatsapp-green);" aria-hidden="true"></i> WhatsApp: <a href="https://wa.me/5493493438294?text=Hola%20Bater%C3%ADas%20Danna,%20quer%C3%ADa%20hacerles%20una%20consulta." target="_blank" class="text-white fw-bold">3493 - 438294</a></p>
+                    <p><i class="fas fa-clock me-2" style="color: #66b2ff;" aria-hidden="true"></i> Lun a Vie: 8:00 a 12:00 y 15:30 a 19:30 | Sáb: 8:00 a 12:30[cite: 1]</p>
+                    <hr style="border-color: rgba(255,255,255,0.1);">
                     <p class="small text-white-50">Aceptamos tarjetas de crédito, débito y planes de financiación locales[cite: 1].</p>
                 </div>
                 <div class="col-md-6">
                     <h4 class="mb-3 text-white text-center">Ubicación</h4>
-                    <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3419.8217743685317!2d-61.564416!3d-30.94121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDU2JzI4LjQiUyA2McKwMzMnNTAuNCJX!5e0!3m2!1ses!2sar!4v1650000000000" allowfullscreen="" loading="lazy" title="Ubicación en el mapa"></iframe>
+                    <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27402.123!2d-61.564!3d-30.941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDU2JzI3LjYiUyA2McKwMzMnNTAuNCJX!5e0!3m2!1ses!2sar!4v1650000000000!5m2!1ses!2sar" allowfullscreen="" loading="lazy" title="Ubicación de Baterías Danna en el mapa[cite: 1]"></iframe>
                     </div>
                 </div>
             </div>
@@ -528,8 +524,8 @@
     </footer>
 
     <!-- Botón Flotante de WhatsApp -->
-    <a href="https://wa.me/5493493438294?text=Hola%20Bater%C3%ADas%20Danna,%20quer%C3%ADa%20hacerles%20una%20consulta." target="_blank" class="btn-wa-float" title="Enviar WhatsApp">
-        <i class="fab fa-whatsapp"></i>
+    <a href="https://wa.me/5493493438294?text=Hola%20Bater%C3%ADas%20Danna,%20quer%C3%ADa%20hacerles%20una%20consulta." target="_blank" class="btn-wa-float" title="Enviar WhatsApp" aria-label="Enviar WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
     </a>
 
     <!-- Bootstrap JS Bundle -->
